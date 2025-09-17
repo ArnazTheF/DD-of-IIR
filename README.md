@@ -18,6 +18,8 @@ sl -F
 
 ## Установка нужных библиотек:
 ```bash
+pip install logging
+pip install
 pip install numpy
 pip install pandas
 pip install nltk
