@@ -18,9 +18,9 @@ logger = logging.getLogger(__name__)
 
 FILENAME = 'shakespeare-hamlet.txt'
 VECTOR_SIZE = 50
-WINDOW = 10
+WINDOW = 5
 MIN_COUNT = 1
-EPOCHS = 20
+EPOCHS = 2
 
 def download_nltk_resources():
     """
@@ -221,7 +221,7 @@ def main():
         except (FileNotFoundError, Exception):
             logger.info("Training new model...")
             model = model_train(VECTOR_SIZE, WINDOW, MIN_COUNT, EPOCHS)
-            #save_model(model)
+            save_model(model)
         
         # Извлечение и оценка эмбеддингов
         words, word_embedds = embeddings_extractor(model)
