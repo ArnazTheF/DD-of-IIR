@@ -7,7 +7,7 @@ from gensim.models import Word2Vec
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
-# Константы вместо аргументов командной строки
+
 SENTENCES_FILE = None  # или путь к файлу, например: 'sentences.txt'
 OUTPUT_DIR = '.'       # выходная директория
 
